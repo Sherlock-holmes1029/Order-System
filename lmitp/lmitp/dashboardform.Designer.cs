@@ -39,8 +39,6 @@
             this.bolstkg1 = new System.Windows.Forms.NumericUpDown();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.bolstkgQuart = new System.Windows.Forms.NumericUpDown();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
             this.custName = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
@@ -54,17 +52,24 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.cost = new System.Windows.Forms.TextBox();
+            this.checkBox4 = new System.Windows.Forms.CheckBox();
+            this.bnsNumb = new System.Windows.Forms.NumericUpDown();
+            this.bnsType = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kg3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bolstkg1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bolstkgQuart)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cartkg1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bolstkgHalf)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bnsNumb)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.AutoScroll = true;
+            this.panel1.Controls.Add(this.bnsType);
+            this.panel1.Controls.Add(this.bnsNumb);
+            this.panel1.Controls.Add(this.checkBox4);
             this.panel1.Controls.Add(this.label8);
             this.panel1.Controls.Add(this.label7);
             this.panel1.Controls.Add(this.label5);
@@ -75,8 +80,6 @@
             this.panel1.Controls.Add(this.bolstkg1);
             this.panel1.Controls.Add(this.checkBox1);
             this.panel1.Controls.Add(this.bolstkgQuart);
-            this.panel1.Controls.Add(this.textBox1);
-            this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.custName);
             this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.label1);
@@ -116,7 +119,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(638, 366);
+            this.label5.Location = new System.Drawing.Point(638, 387);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(69, 16);
             this.label5.TabIndex = 64;
@@ -124,7 +127,7 @@
             // 
             // handingdate
             // 
-            this.handingdate.Location = new System.Drawing.Point(399, 366);
+            this.handingdate.Location = new System.Drawing.Point(399, 387);
             this.handingdate.Name = "handingdate";
             this.handingdate.Size = new System.Drawing.Size(200, 22);
             this.handingdate.TabIndex = 63;
@@ -183,22 +186,6 @@
             this.bolstkgQuart.Size = new System.Drawing.Size(120, 22);
             this.bolstkgQuart.TabIndex = 57;
             // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(445, 306);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(154, 22);
-            this.textBox1.TabIndex = 56;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(671, 306);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(36, 16);
-            this.label4.TabIndex = 55;
-            this.label4.Text = "بونص";
-            // 
             // custName
             // 
             this.custName.Location = new System.Drawing.Point(443, 114);
@@ -215,6 +202,7 @@
             this.button1.TabIndex = 54;
             this.button1.Text = "اضف";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label1
             // 
@@ -309,6 +297,42 @@
             this.cost.Size = new System.Drawing.Size(154, 22);
             this.cost.TabIndex = 48;
             // 
+            // checkBox4
+            // 
+            this.checkBox4.AutoSize = true;
+            this.checkBox4.Location = new System.Drawing.Point(646, 307);
+            this.checkBox4.Name = "checkBox4";
+            this.checkBox4.Size = new System.Drawing.Size(58, 20);
+            this.checkBox4.TabIndex = 67;
+            this.checkBox4.Text = "بونص";
+            this.checkBox4.UseVisualStyleBackColor = true;
+            this.checkBox4.CheckedChanged += new System.EventHandler(this.checkBox4_CheckedChanged);
+            // 
+            // bnsNumb
+            // 
+            this.bnsNumb.Enabled = false;
+            this.bnsNumb.Location = new System.Drawing.Point(443, 344);
+            this.bnsNumb.Name = "bnsNumb";
+            this.bnsNumb.Size = new System.Drawing.Size(156, 22);
+            this.bnsNumb.TabIndex = 68;
+            // 
+            // bnsType
+            // 
+            this.bnsType.Enabled = false;
+            this.bnsType.FormattingEnabled = true;
+            this.bnsType.IntegralHeight = false;
+            this.bnsType.Items.AddRange(new object[] {
+            "كرتون 1كجم",
+            "بولسترين 1كجم",
+            "بولسترين 1/2كجم",
+            "بولسترين 1/4كجم",
+            "بوكس بلاستك 3كجم"});
+            this.bnsType.Location = new System.Drawing.Point(443, 303);
+            this.bnsType.Name = "bnsType";
+            this.bnsType.Size = new System.Drawing.Size(156, 24);
+            this.bnsType.TabIndex = 69;
+            this.bnsType.Text = "                  -اختار-  ";
+            // 
             // dashboardform
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -329,6 +353,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.bolstkgQuart)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cartkg1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bolstkgHalf)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bnsNumb)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -346,8 +371,6 @@
         private System.Windows.Forms.NumericUpDown bolstkg1;
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.NumericUpDown bolstkgQuart;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox custName;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label1;
@@ -361,5 +384,8 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox cost;
+        private System.Windows.Forms.NumericUpDown bnsNumb;
+        private System.Windows.Forms.CheckBox checkBox4;
+        private System.Windows.Forms.ComboBox bnsType;
     }
 }

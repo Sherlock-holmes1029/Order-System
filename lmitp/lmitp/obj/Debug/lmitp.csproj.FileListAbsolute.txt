@@ -29,3 +29,21 @@ C:\Users\Kishk\OneDrive\Desktop\lmitp\lmitp\bin\Debug\ar\lmitp.resources.dll
 C:\Users\Kishk\OneDrive\Desktop\lmitp\lmitp\obj\Debug\lmitp.Form1.ar.resources
 C:\Users\Kishk\OneDrive\Desktop\lmitp\lmitp\obj\Debug\ar\lmitp.resources.dll
 C:\Users\Kishk\OneDrive\Desktop\lmitp\lmitp\obj\Debug\lmitp.dashboardform.ar.resources
+D:\Old user\WORK\Programming\git\farmProject\Order-System\lmitp\lmitp\bin\Debug\lmitp.exe.config
+D:\Old user\WORK\Programming\git\farmProject\Order-System\lmitp\lmitp\bin\Debug\lmitp.exe
+D:\Old user\WORK\Programming\git\farmProject\Order-System\lmitp\lmitp\bin\Debug\lmitp.pdb
+D:\Old user\WORK\Programming\git\farmProject\Order-System\lmitp\lmitp\bin\Debug\ar\lmitp.resources.dll
+D:\Old user\WORK\Programming\git\farmProject\Order-System\lmitp\lmitp\obj\Debug\lmitp.csproj.AssemblyReference.cache
+D:\Old user\WORK\Programming\git\farmProject\Order-System\lmitp\lmitp\obj\Debug\lmitp.csproj.SuggestedBindingRedirects.cache
+D:\Old user\WORK\Programming\git\farmProject\Order-System\lmitp\lmitp\obj\Debug\lmitp.dashboardform.resources
+D:\Old user\WORK\Programming\git\farmProject\Order-System\lmitp\lmitp\obj\Debug\lmitp.employeeform.resources
+D:\Old user\WORK\Programming\git\farmProject\Order-System\lmitp\lmitp\obj\Debug\lmitp.Form1.resources
+D:\Old user\WORK\Programming\git\farmProject\Order-System\lmitp\lmitp\obj\Debug\lmitp.Properties.Resources.resources
+D:\Old user\WORK\Programming\git\farmProject\Order-System\lmitp\lmitp\obj\Debug\lmitp.reportsform.resources
+D:\Old user\WORK\Programming\git\farmProject\Order-System\lmitp\lmitp\obj\Debug\lmitp.dashboardform.ar.resources
+D:\Old user\WORK\Programming\git\farmProject\Order-System\lmitp\lmitp\obj\Debug\lmitp.Form1.ar.resources
+D:\Old user\WORK\Programming\git\farmProject\Order-System\lmitp\lmitp\obj\Debug\lmitp.csproj.GenerateResource.cache
+D:\Old user\WORK\Programming\git\farmProject\Order-System\lmitp\lmitp\obj\Debug\lmitp.csproj.CoreCompileInputs.cache
+D:\Old user\WORK\Programming\git\farmProject\Order-System\lmitp\lmitp\obj\Debug\ar\lmitp.resources.dll
+D:\Old user\WORK\Programming\git\farmProject\Order-System\lmitp\lmitp\obj\Debug\lmitp.exe
+D:\Old user\WORK\Programming\git\farmProject\Order-System\lmitp\lmitp\obj\Debug\lmitp.pdb

@@ -7,11 +7,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using System.Data.SQLite;
 namespace lmitp
 {
     public partial class dashboardform : Form
     {
+
         public dashboardform()
         {
             InitializeComponent();
@@ -141,6 +142,25 @@ namespace lmitp
                 kg3.Enabled= false;
                 kg3.Value = 0;
             }
+        }
+
+        private void checkBox4_CheckedChanged(object sender, EventArgs e)
+        {
+            if(checkBox4.Checked)
+            {
+                bnsNumb.Enabled= true;
+                bnsType.Enabled= true;
+            }
+            else
+            {
+                bnsNumb.Enabled= false;
+                bnsType.Enabled= false;
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
