@@ -47,3 +47,14 @@ D:\Old user\WORK\Programming\git\farmProject\Order-System\lmitp\lmitp\obj\Debug\
 D:\Old user\WORK\Programming\git\farmProject\Order-System\lmitp\lmitp\obj\Debug\ar\lmitp.resources.dll
 D:\Old user\WORK\Programming\git\farmProject\Order-System\lmitp\lmitp\obj\Debug\lmitp.exe
 D:\Old user\WORK\Programming\git\farmProject\Order-System\lmitp\lmitp\obj\Debug\lmitp.pdb
+D:\Old user\WORK\Programming\git\farmProject\Order-System\lmitp\lmitp\bin\Debug\x86\sqlite3.dll
+D:\Old user\WORK\Programming\git\farmProject\Order-System\lmitp\lmitp\bin\Debug\x64\sqlite3.dll
+D:\Old user\WORK\Programming\git\farmProject\Order-System\lmitp\lmitp\bin\Debug\EntityFramework.dll
+D:\Old user\WORK\Programming\git\farmProject\Order-System\lmitp\lmitp\bin\Debug\EntityFramework.SqlServer.dll
+D:\Old user\WORK\Programming\git\farmProject\Order-System\lmitp\lmitp\bin\Debug\System.Data.SQLite.dll
+D:\Old user\WORK\Programming\git\farmProject\Order-System\lmitp\lmitp\bin\Debug\System.Data.SQLite.EF6.dll
+D:\Old user\WORK\Programming\git\farmProject\Order-System\lmitp\lmitp\bin\Debug\System.Data.SQLite.Linq.dll
+D:\Old user\WORK\Programming\git\farmProject\Order-System\lmitp\lmitp\bin\Debug\EntityFramework.xml
+D:\Old user\WORK\Programming\git\farmProject\Order-System\lmitp\lmitp\bin\Debug\EntityFramework.SqlServer.xml
+D:\Old user\WORK\Programming\git\farmProject\Order-System\lmitp\lmitp\bin\Debug\System.Data.SQLite.xml
+D:\Old user\WORK\Programming\git\farmProject\Order-System\lmitp\lmitp\obj\Debug\lmitp.csproj.CopyComplete

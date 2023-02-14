@@ -28,15 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.panelside = new System.Windows.Forms.Panel();
             this.btnArchive = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnWaitingList = new System.Windows.Forms.Button();
             this.btnAddOrder = new System.Windows.Forms.Button();
             this.panelheader = new System.Windows.Forms.Panel();
+            this.Clock = new System.Windows.Forms.Label();
             this.btnclose = new System.Windows.Forms.Button();
             this.mainpanel = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.panelside.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panelheader.SuspendLayout();
@@ -133,6 +136,7 @@
             // panelheader
             // 
             this.panelheader.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(141)))), ((int)(((byte)(79)))));
+            this.panelheader.Controls.Add(this.Clock);
             this.panelheader.Controls.Add(this.btnclose);
             this.panelheader.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelheader.Location = new System.Drawing.Point(0, 0);
@@ -144,6 +148,16 @@
             this.panelheader.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelheader_MouseDown);
             this.panelheader.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panelheader_MouseMove);
             this.panelheader.MouseUp += new System.Windows.Forms.MouseEventHandler(this.panelheader_MouseUp);
+            // 
+            // Clock
+            // 
+            this.Clock.AutoSize = true;
+            this.Clock.ForeColor = System.Drawing.Color.White;
+            this.Clock.Location = new System.Drawing.Point(57, 11);
+            this.Clock.Name = "Clock";
+            this.Clock.Size = new System.Drawing.Size(0, 16);
+            this.Clock.TabIndex = 2;
+            this.Clock.Click += new System.EventHandler(this.label1_Click);
             // 
             // btnclose
             // 
@@ -184,6 +198,12 @@
             this.pictureBox2.TabIndex = 0;
             this.pictureBox2.TabStop = false;
             // 
+            // timer1
+            // 
+            this.timer1.Enabled = true;
+            this.timer1.Interval = 1000;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -201,6 +221,7 @@
             this.panelside.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panelheader.ResumeLayout(false);
+            this.panelheader.PerformLayout();
             this.mainpanel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
@@ -218,6 +239,8 @@
         private System.Windows.Forms.Button btnclose;
         private System.Windows.Forms.Panel mainpanel;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Label Clock;
+        private System.Windows.Forms.Timer timer1;
     }
 }
 
