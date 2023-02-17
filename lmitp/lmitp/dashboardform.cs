@@ -13,7 +13,7 @@ namespace lmitp
     //todo: connect it with the data base and create the insert function 
     public partial class dashboardform : Form
     {
-        SQLiteConnection cmd;
+        SQLiteConnection con;
         public dashboardform()
         {
             InitializeComponent();
@@ -26,10 +26,11 @@ namespace lmitp
 
         private void dashboardform_Load(object sender, EventArgs e)
         {
-            handingdate.MinDate= DateTime.Now.AddDays(1);
+            dateTimePicker1.MinDate= DateTime.Now.AddDays(1);
             chkC1.Checked = true;
-            cmd = new SQLiteConnection("Data Source=farmSheet.db,Version=3;");
-           
+            con = new SQLiteConnection("Data Source=farmSheet.db,Version=3;");
+            
+            
             
            
 
@@ -141,7 +142,27 @@ namespace lmitp
                 flag -= 1;
                 errCost.Text = "";
             }
-            
+            //////////////////////
+          
+
+            if (flag == -4)
+            {
+
+                flag = 0;
+               
+                    string  sql = "INSERT INTO  customerData (Name,phoneNumb,Location,Date,Cost,BnsType,BnsNumb,c1,b1,bh,bq,p3) VALUES " +
+                    "('" + custName.Text.ToString() + "','" + phoneNumb.Text.ToString() + "','" + region.Text.ToString() + "','" + dateTimePicker1.Value.ToString("d") + "'," +
+                    ""+cost.Text.ToString()+","+bnsType.SelectedIndex.ToString()+","+bnsNumb.Value.ToString()+","+cartkg1.Value.ToString()+"," +
+                    ""+bolstkg1.Value.ToString()+","+bolstkgHalf.Value.ToString()+","+bolstkgQuart.Value.ToString()+","+kg3.Value.ToString()+");";
+                con.Open();
+                SQLiteCommand cmd= new SQLiteCommand(sql,con);
+                int done=cmd.ExecuteNonQuery();
+                if (done!=0)
+                {
+                    MessageBox.Show(done.ToString());
+                }
+            }
+
         }
 
         private void chkC1_CheckedChanged(object sender, EventArgs e)
@@ -253,6 +274,36 @@ namespace lmitp
             }
             else {
                 chkP3.Checked = true;
+            }
+        }
+
+        private void cost_KeyPress_1(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) &&
+               (e.KeyChar != '.'))
+            {
+                e.Handled = true;
+            }
+
+            // only allow one decimal point
+            if ((e.KeyChar == '.') && ((sender as TextBox).Text.IndexOf('.') > -1))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void phoneNumb_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) &&
+               (e.KeyChar != '.'))
+            {
+                e.Handled = true;
+            }
+
+            // only allow one decimal point
+            if ((e.KeyChar == '.') && ((sender as TextBox).Text.IndexOf('.') > -1))
+            {
+                e.Handled = true;
             }
         }
     }

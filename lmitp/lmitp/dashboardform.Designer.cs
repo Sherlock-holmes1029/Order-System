@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.errCost = new System.Windows.Forms.Label();
             this.errBnsNumb = new System.Windows.Forms.Label();
             this.errBnsType = new System.Windows.Forms.Label();
             this.errCustNumb = new System.Windows.Forms.Label();
@@ -40,7 +41,7 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.handingdate = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.chkP3 = new System.Windows.Forms.CheckBox();
             this.kg3 = new System.Windows.Forms.NumericUpDown();
             this.chkB1 = new System.Windows.Forms.CheckBox();
@@ -60,7 +61,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.cost = new System.Windows.Forms.TextBox();
-            this.errCost = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bnsNumb)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kg3)).BeginInit();
@@ -85,7 +85,7 @@
             this.panel1.Controls.Add(this.label8);
             this.panel1.Controls.Add(this.label7);
             this.panel1.Controls.Add(this.label5);
-            this.panel1.Controls.Add(this.handingdate);
+            this.panel1.Controls.Add(this.dateTimePicker1);
             this.panel1.Controls.Add(this.chkP3);
             this.panel1.Controls.Add(this.kg3);
             this.panel1.Controls.Add(this.chkB1);
@@ -110,6 +110,14 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1068, 556);
             this.panel1.TabIndex = 42;
+            // 
+            // errCost
+            // 
+            this.errCost.AutoSize = true;
+            this.errCost.Location = new System.Drawing.Point(727, 261);
+            this.errCost.Name = "errCost";
+            this.errCost.Size = new System.Drawing.Size(0, 16);
+            this.errCost.TabIndex = 80;
             // 
             // errBnsNumb
             // 
@@ -217,13 +225,13 @@
             this.label5.TabIndex = 64;
             this.label5.Text = "تاريخ التسليم";
             // 
-            // handingdate
+            // dateTimePicker1
             // 
-            this.handingdate.Location = new System.Drawing.Point(399, 386);
-            this.handingdate.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.handingdate.Name = "handingdate";
-            this.handingdate.Size = new System.Drawing.Size(200, 22);
-            this.handingdate.TabIndex = 63;
+            this.dateTimePicker1.Location = new System.Drawing.Point(399, 386);
+            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(200, 22);
+            this.dateTimePicker1.TabIndex = 63;
             // 
             // chkP3
             // 
@@ -336,6 +344,7 @@
             this.phoneNumb.Name = "phoneNumb";
             this.phoneNumb.Size = new System.Drawing.Size(153, 22);
             this.phoneNumb.TabIndex = 44;
+            this.phoneNumb.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.phoneNumb_KeyPress);
             // 
             // chkBH
             // 
@@ -409,14 +418,7 @@
             this.cost.Name = "cost";
             this.cost.Size = new System.Drawing.Size(153, 22);
             this.cost.TabIndex = 48;
-            // 
-            // errCost
-            // 
-            this.errCost.AutoSize = true;
-            this.errCost.Location = new System.Drawing.Point(727, 261);
-            this.errCost.Name = "errCost";
-            this.errCost.Size = new System.Drawing.Size(0, 16);
-            this.errCost.TabIndex = 80;
+            this.cost.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.cost_KeyPress_1);
             // 
             // dashboardform
             // 
@@ -449,7 +451,7 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.DateTimePicker handingdate;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.CheckBox chkP3;
         private System.Windows.Forms.NumericUpDown kg3;
         private System.Windows.Forms.CheckBox chkB1;
